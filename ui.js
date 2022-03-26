@@ -37,7 +37,7 @@ if (typeof jQuery !== 'undefined') {
                  */
                 self.status = $('<p class="nes-status">Booting up...</p>').appendTo(self.root);
                 self.root = $('<div></div>');
-                self.screen = $('<canvas class="nes-screen" width="512" height="480"></canvas>').appendTo(self.root);
+                self.screen = $('<canvas class="nes-screen" width="256" height="240"></canvas>').appendTo(self.root);
 
                 if (!self.screen[0].getContext) {
                     parent.html("Your browser doesn't support the <code>&lt;canvas&gt;</code> tag. Try Google Chrome, Safari, Opera or Firefox!");
